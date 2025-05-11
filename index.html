@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Especial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📘 Calculadora Especial</h1>
+
+  <div class="section">
+    <h2>Selecciona Clase</h2>
+    <button onclick="selectValue('clase', '5', 'Inglés')">Inglés</button>
+    <button onclick="selectValue('clase', '4', 'Materias Básicas')">Matemáticas/Sociales/Biología/Español</button>
+    <button onclick="selectValue('clase', '3', 'Otras')">Otras</button>
+  </div>
+
+  <div class="section">
+    <h2>Selecciona Tipo</h2>
+    <button onclick="selectValue('tipo', '6', 'Evaluación')">Evaluación</button>
+    <button onclick="selectValue('tipo', '5', 'Tarea')">Tarea</button>
+    <button onclick="selectValue('tipo', '4', 'Taller')">Taller</button>
+    <button onclick="selectValue('tipo', '3', 'Iniciativa')">Iniciativa Propia</button>
+  </div>
+
+  <div class="section">
+    <h2>Selecciona Nota</h2>
+    <button onclick="selectValue('nota', '5', '5.0–4.0')">5.0–4.0</button>
+    <button onclick="selectValue('nota', '4', '3.9–3.0')">3.9–3.0</button>
+    <button onclick="selectValue('nota', '3', '2.9–0')">2.9–0</button>
+  </div>
+
+  <div class="section">
+    <h3>Seleccionado:</h3>
+    <p id="seleccion"></p>
+    <button onclick="guardarLinea()">Guardar Línea</button>
+  </div>
+
+  <div class="section">
+    <h2>Líneas guardadas</h2>
+    <ul id="lineas"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Multiplicadores</h2>
+    <button onclick="toggleMultiplicador('grupo')">Grupo (7%)</button>
+    <button onclick="toggleMultiplicador('calidad')">Calidad (15%)</button>
+    <button onclick="toggleMultiplicador('responsabilidad')">Responsabilidad (15%)</button>
+    <button onclick="toggleMultiplicador('disciplina')">Disciplina (5%)</button>
+    <button onclick="toggleMultiplicador('ahorro')">Ahorro (8%)</button>
+  </div>
+
+  <div class="section">
+    <h2>Resultados</h2>
+    <p>Subtotal: <strong id="subtotal">0.00</strong></p>
+    <p>Resultado Final: <strong id="resultado">0.00</strong></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

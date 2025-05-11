@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
